@@ -309,8 +309,39 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   font-size: 17px;
   color: var(--text-mid);
   line-height: 1.7;
-  margin-bottom: 36px;
+  margin-bottom: 20px;
   font-weight: 300;
+}
+
+/* Franja de credenciales en el hero */
+.hero-credentials {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 0;
+  padding: 14px 20px;
+  background: rgba(123, 158, 138, 0.10);
+  border: 1px solid rgba(123, 158, 138, 0.25);
+  border-radius: var(--radius-sm);
+  margin-bottom: 14px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--sage-dark);
+  letter-spacing: 0.01em;
+}
+.hero-credentials span { white-space: nowrap; }
+.cred-dot {
+  margin: 0 8px;
+  color: var(--sage-mid);
+  font-weight: 400;
+}
+
+.hero-microcopy {
+  font-size: 14px;
+  font-weight: 300;
+  font-style: italic;
+  color: var(--text-light);
+  margin-bottom: 32px;
 }
 
 .hero-btns {
@@ -391,6 +422,70 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   line-height: 0;
 }
 .hero-wave svg { width: 100%; display: block; }
+
+/* ═══════════════════════════════════════════════════
+   RESPALDO PROFESIONAL
+   ═══════════════════════════════════════════════════ */
+.trust {
+  padding: 88px 0;
+  background: var(--cream);
+}
+
+.trust-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 72px;
+  align-items: start;
+}
+
+.trust-body {
+  font-size: 16px;
+  color: var(--text-mid);
+  line-height: 1.75;
+  margin-top: 20px;
+  font-weight: 300;
+}
+
+.trust-blocks {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.trust-block {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  padding: 22px 0;
+  border-bottom: 1px solid var(--border);
+}
+.trust-block:first-child { border-top: 1px solid var(--border); }
+
+.trust-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--sage-light);
+  color: var(--sage-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.trust-block-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+
+.trust-block-sub {
+  font-size: 14px;
+  color: var(--text-light);
+  font-weight: 300;
+  line-height: 1.5;
+}
 
 /* ═══════════════════════════════════════════════════
    SOBRE SHANON
@@ -509,8 +604,8 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 
 .services-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 24px;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
   align-items: start;
 }
 
@@ -532,8 +627,14 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .service-card--main {
   background: linear-gradient(145deg, #EDF4F0, var(--white));
   border-color: var(--sage-mid);
-  grid-column: 1;
-  grid-row: 1;
+}
+
+.service-closing {
+  font-size: 13.5px;
+  font-style: italic;
+  color: var(--sage-dark);
+  font-weight: 400;
+  padding-top: 4px;
 }
 
 .service-top {
@@ -681,6 +782,8 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   box-shadow: var(--shadow-sm);
   transform: translateY(-2px);
 }
+
+.value-item--full { grid-column: 1 / -1; }
 
 .value-icon {
   width: 42px;
@@ -929,10 +1032,11 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .hero-content         { max-width: 100%; }
   .hero-title           { font-size: clamp(32px, 5vw, 48px); }
 
+  .trust-grid           { grid-template-columns: 1fr; gap: 40px; }
+
   .about-grid           { grid-template-columns: 320px 1fr; gap: 48px; }
 
-  .services-grid        { grid-template-columns: 1fr 1fr; }
-  .service-card--main   { grid-column: 1 / -1; }
+  .services-grid        { grid-template-columns: 1fr; }
 
   .steps-grid           { grid-template-columns: 1fr; gap: 0; }
   .step-arrow           { display: none; }

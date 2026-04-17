@@ -5,18 +5,18 @@
 const WA_NUMBER = '573242762563';
 
 const WA_MESSAGES = {
-  es: 'Hola Shanon, vi tu página web y me gustaría recibir información sobre tu acompañamiento profesional para padres de recién nacidos.',
-  en: 'Hello Shanon, I saw your website and I would like to get more information about your professional support service for parents of newborns.'
+  es: 'Hola Shanon, vi tu página web y me gustaría recibir información sobre tu acompañamiento profesional. Quisiera contarte si mi caso está relacionado con el cuidado de un adulto mayor o con los primeros días de un recién nacido.',
+  en: 'Hello Shanon, I saw your website and I would like to receive more information about your professional support services. I\'d like to tell you whether my case is related to caring for an older adult or to the first days of a newborn.'
 };
 
 const SEO = {
   es: {
-    title: 'Shanon | Acompañamiento profesional para padres de recién nacidos',
-    description: 'Orientación profesional, humana y cercana para familias y padres de recién nacidos. Atención en español e inglés. Contacto por WhatsApp.'
+    title: 'Shanon | Acompañamiento profesional y humano para familias que cuidan',
+    description: 'Orientación profesional para familias cuidadoras de adultos mayores y padres de recién nacidos. Enfermera Jefe bilingüe con posgrado en Cuidado Crítico. Contacto por WhatsApp.'
   },
   en: {
-    title: 'Shanon | Professional support for parents of newborns',
-    description: 'Professional, warm, and personalized support for families and parents of newborns. Service available in Spanish and English. Contact via WhatsApp.'
+    title: 'Shanon | Professional and human support for families who care',
+    description: 'Professional guidance for caregiving families of older adults and parents of newborns. Bilingual Registered Nurse with postgraduate training in Critical Care. Contact via WhatsApp.'
   }
 };
 
