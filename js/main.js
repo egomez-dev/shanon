@@ -2,6 +2,18 @@
    SHANON GÓMEZ — JAVASCRIPT PRINCIPAL
    ═══════════════════════════════════════════════════ */
 
+/* ─── Cal.com / /book (arquitectura preparada — no activa aún)
+   Para activar /book, cambiar BOOK_ACTIVE a true y actualizar
+   los botones de servicio para que usen los enlaces de CAL_LINKS.
+   ─────────────────────────────────────────────────────────── */
+var BOOK_ACTIVE = false;
+var CAL_LINKS = {
+  '30min': 'https://cal.com/shanongomez/30min',
+  '2h':    'https://cal.com/shanongomez/2h',
+  '4h':    'https://cal.com/shanongomez/4h',
+  '8h':    'https://cal.com/shanongomez/8h'
+};
+
 const WA_NUMBER = '573242762563';
 
 const WA_MESSAGES = {
@@ -10,15 +22,34 @@ const WA_MESSAGES = {
 };
 
 const SEO = {
-  es: {
-    title: 'Shanon | Acompañamiento profesional y humano para familias que cuidan',
-    description: 'Orientación profesional para familias cuidadoras de adultos mayores y padres de recién nacidos. Enfermera Jefe bilingüe con posgrado en Cuidado Crítico. Contacto por WhatsApp.'
+  home: {
+    es: {
+      title: 'Shanon | Acompañamiento profesional y humano para familias cuidadoras',
+      description: 'Shanon es enfermera jefe bilingüe, con posgrado en cuidado crítico del adulto y 8 años de experiencia clínica. Acompañamiento profesional para adultos mayores y recién nacidos.'
+    },
+    en: {
+      title: 'Shanon | Professional and human support for caregiving families',
+      description: 'Shanon is a bilingual registered nurse with postgraduate training in adult critical care and 8 years of clinical experience. Professional support for older adults and newborns.'
+    }
   },
-  en: {
-    title: 'Shanon | Professional and human support for families who care',
-    description: 'Professional guidance for caregiving families of older adults and parents of newborns. Bilingual Registered Nurse with postgraduate training in Critical Care. Contact via WhatsApp.'
+  services: {
+    es: {
+      title: 'Servicios | Shanon',
+      description: 'Conoce los servicios virtuales y presenciales de acompañamiento profesional que Shanon ofrece para adultos mayores, familias cuidadoras y recién nacidos.'
+    },
+    en: {
+      title: 'Services | Shanon',
+      description: "Explore Shanon's virtual and in-person professional support services for older adults, caregiving families, and newborns."
+    }
   }
 };
+
+/* Detectar qué página estamos */
+function getPageKey() {
+  var path = window.location.pathname;
+  if (path.indexOf('services') !== -1) return 'services';
+  return 'home';
+}
 
 let currentLang = 'es';
 
@@ -53,9 +84,11 @@ function setLanguage(lang) {
   document.getElementById('btn-en').classList.toggle('active', lang === 'en');
 
   // Actualizar SEO meta
-  document.title = SEO[lang].title;
+  var pageKey = getPageKey();
+  var pageSeo = SEO[pageKey] ? SEO[pageKey][lang] : SEO.home[lang];
+  document.title = pageSeo.title;
   var metaDesc = document.getElementById('meta-description');
-  if (metaDesc) metaDesc.setAttribute('content', SEO[lang].description);
+  if (metaDesc) metaDesc.setAttribute('content', pageSeo.description);
 
   // Guardar preferencia
   try { localStorage.setItem('shanon_lang', lang); } catch(e) {}

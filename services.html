@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title id="meta-title">Servicios | Shanon</title>
+  <meta name="description" id="meta-description"
+    content="Conoce los servicios virtuales y presenciales de acompañamiento profesional que Shanon ofrece para adultos mayores, familias cuidadoras y recién nacidos." />
+  <meta name="robots" content="index, follow" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Sans:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════ HEADER ═══════════════════════════ -->
+  <header class="header" id="header">
+    <div class="header-container">
+
+      <a href="/" class="logo">Shanon</a>
+
+      <nav class="nav" id="nav">
+        <a href="/"              class="nav-link" data-es="Inicio"               data-en="Home">Inicio</a>
+        <a href="/#sobre"        class="nav-link" data-es="Sobre Shanon"         data-en="About Shanon">Sobre Shanon</a>
+        <a href="/services"      class="nav-link nav-link--active" data-es="Servicios" data-en="Services">Servicios</a>
+        <a href="/#como-funciona" class="nav-link" data-es="Cómo funciona"       data-en="How it works">Cómo funciona</a>
+        <a href="/#faq"          class="nav-link" data-es="Preguntas frecuentes" data-en="FAQ">Preguntas frecuentes</a>
+        <a href="/#contacto"     class="nav-link" data-es="Contacto"             data-en="Contact">Contacto</a>
+      </nav>
+
+      <div class="header-actions">
+        <div class="lang-switch">
+          <button class="lang-btn active" id="btn-es" onclick="setLanguage('es')">ES</button>
+          <span class="lang-sep">|</span>
+          <button class="lang-btn" id="btn-en" onclick="setLanguage('en')">EN</button>
+        </div>
+
+        <a href="#" class="wa-btn-header wa-link">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          <span data-es="Escribir por WhatsApp" data-en="Chat on WhatsApp">Escribir por WhatsApp</span>
+        </a>
+
+        <button class="menu-toggle" id="menu-toggle" aria-label="Menú" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════ PAGE HERO ═══════════════════════════ -->
+  <section class="page-hero">
+    <div class="page-hero-container fade-in">
+      <p class="eyebrow" data-es="Acompañamiento profesional" data-en="Professional support">Acompañamiento profesional</p>
+      <h1 class="page-hero-title"
+        data-es="Servicios de acompañamiento profesional"
+        data-en="Professional support services">
+        Servicios de acompañamiento profesional
+      </h1>
+      <p class="page-hero-subtitle"
+        data-es="Conoce las modalidades de apoyo que Shanon ofrece para familias que cuidan de adultos mayores o atraviesan los primeros días de un recién nacido."
+        data-en="Explore the support options Shanon offers for families caring for older adults or going through a newborn's first days at home.">
+        Conoce las modalidades de apoyo que Shanon ofrece para familias que cuidan de adultos mayores o atraviesan los primeros días de un recién nacido.
+      </p>
+      <a href="#" class="btn-primary wa-link">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        <span data-es="Hablar por WhatsApp" data-en="Chat on WhatsApp">Hablar por WhatsApp</span>
+      </a>
+    </div>
+    <div class="page-hero-wave">
+      <svg viewBox="0 0 1440 72" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <path d="M0 36C240 72 480 0 720 36C960 72 1200 0 1440 36V72H0V36Z" fill="#FFFFFF"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ MODALIDADES INTRO ═══════════════════════════ -->
+  <section class="modalities">
+    <div class="container">
+      <div class="fade-in">
+        <p class="eyebrow" data-es="Formatos disponibles" data-en="Available formats">Formatos disponibles</p>
+        <h2 class="section-title"
+          data-es="Modalidades de atención"
+          data-en="Support formats">
+          Modalidades de atención
+        </h2>
+        <p class="modalities-body"
+          data-es="Shanon ofrece acompañamiento en modalidad virtual y presencial, según la necesidad de cada familia. El primer contacto se realiza por WhatsApp para entender el caso, orientar mejor la solicitud y definir la modalidad más adecuada."
+          data-en="Shanon offers both virtual and in-person support depending on each family's needs. The first contact takes place through WhatsApp to better understand the situation and define the most appropriate format.">
+          Shanon ofrece acompañamiento en modalidad virtual y presencial, según la necesidad de cada familia. El primer contacto se realiza por WhatsApp para entender el caso, orientar mejor la solicitud y definir la modalidad más adecuada.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ PRICING CARDS ═══════════════════════════ -->
+  <section class="pricing">
+    <div class="container">
+      <div class="pricing-grid">
+
+        <!-- Servicio 1: Virtual 30 min -->
+        <!-- data-book-url para futura integración /book -->
+        <div class="pricing-card pricing-card--featured fade-in" data-book-url="https://cal.com/shanongomez/30min">
+          <span class="pricing-label pricing-label--virtual">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            <span data-es="Virtual" data-en="Virtual">Virtual</span>
+          </span>
+          <h2 class="pricing-title"
+            data-es="Orientación inicial virtual"
+            data-en="Initial virtual guidance">
+            Orientación inicial virtual
+          </h2>
+          <p class="pricing-desc"
+            data-es="Un espacio breve y enfocado para resolver dudas, orientar a la familia y brindar claridad inicial frente al cuidado de un adulto mayor o a los primeros días de un recién nacido."
+            data-en="A brief and focused session to answer questions, guide the family, and provide initial clarity regarding the care of an older adult or the first days of a newborn.">
+            Un espacio breve y enfocado para resolver dudas, orientar a la familia y brindar claridad inicial frente al cuidado de un adulto mayor o a los primeros días de un recién nacido.
+          </p>
+          <div class="pricing-meta">
+            <div class="pricing-duration">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              <span data-es="30 minutos" data-en="30 minutes">30 minutos</span>
+            </div>
+            <div class="pricing-price-block">
+              <span class="pricing-price">100.000</span>
+              <span class="pricing-currency">COP</span>
+            </div>
+          </div>
+          <p class="pricing-note"
+            data-es="Ideal como primer paso para entender la necesidad y definir si se requiere acompañamiento adicional."
+            data-en="Ideal as a first step to understand the family's needs and define whether additional support is required.">
+            Ideal como primer paso para entender la necesidad y definir si se requiere acompañamiento adicional.
+          </p>
+          <a href="#" class="btn-primary wa-link">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            <span data-es="Solicitar orientación" data-en="Request guidance">Solicitar orientación</span>
+          </a>
+        </div>
+
+        <!-- Servicio 2: Presencial 2h -->
+        <div class="pricing-card fade-in fade-delay" data-book-url="https://cal.com/shanongomez/2h">
+          <span class="pricing-label pricing-label--presencial">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+            <span data-es="Presencial" data-en="In person">Presencial</span>
+          </span>
+          <h2 class="pricing-title"
+            data-es="Acompañamiento presencial base"
+            data-en="Standard in-person support">
+            Acompañamiento presencial base
+          </h2>
+          <p class="pricing-desc"
+            data-es="Un espacio presencial de acompañamiento profesional para familias que necesitan mayor claridad, orientación práctica y apoyo cercano en casa."
+            data-en="An in-person professional support session for families who need more clarity, practical guidance, and close support at home.">
+            Un espacio presencial de acompañamiento profesional para familias que necesitan mayor claridad, orientación práctica y apoyo cercano en casa.
+          </p>
+          <div class="pricing-meta">
+            <div class="pricing-duration">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              <span data-es="2 horas" data-en="2 hours">2 horas</span>
+            </div>
+            <div class="pricing-price-block">
+              <span class="pricing-price">250.000</span>
+              <span class="pricing-currency">COP</span>
+            </div>
+          </div>
+          <p class="pricing-note"
+            data-es="Modalidad base para acompañamientos presenciales."
+            data-en="Base format for in-person support sessions.">
+            Modalidad base para acompañamientos presenciales.
+          </p>
+          <a href="#" class="btn-primary wa-link">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            <span data-es="Solicitar acompañamiento" data-en="Request support">Solicitar acompañamiento</span>
+          </a>
+        </div>
+
+        <!-- Servicio 3: Presencial extendido 4h -->
+        <div class="pricing-card fade-in" data-book-url="https://cal.com/shanongomez/4h">
+          <span class="pricing-label pricing-label--extended">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+            <span data-es="Presencial extendido" data-en="Extended in person">Presencial extendido</span>
+          </span>
+          <h2 class="pricing-title"
+            data-es="Bloque extendido de acompañamiento"
+            data-en="Extended support block">
+            Bloque extendido de acompañamiento
+          </h2>
+          <p class="pricing-desc"
+            data-es="Una modalidad pensada para casos que requieren más tiempo de observación, orientación y acompañamiento continuo durante la jornada."
+            data-en="A format designed for situations that require more time for observation, guidance, and continuous support during the day.">
+            Una modalidad pensada para casos que requieren más tiempo de observación, orientación y acompañamiento continuo durante la jornada.
+          </p>
+          <div class="pricing-meta">
+            <div class="pricing-duration">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              <span data-es="4 horas" data-en="4 hours">4 horas</span>
+            </div>
+            <div class="pricing-price-block">
+              <span class="pricing-price">480.000</span>
+              <span class="pricing-currency">COP</span>
+            </div>
+          </div>
+          <p class="pricing-note"
+            data-es="Adecuado para necesidades que requieren mayor permanencia y apoyo estructurado."
+            data-en="Suitable for cases that require greater continuity and structured support.">
+            Adecuado para necesidades que requieren mayor permanencia y apoyo estructurado.
+          </p>
+          <a href="#" class="btn-primary wa-link">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            <span data-es="Solicitar acompañamiento" data-en="Request support">Solicitar acompañamiento</span>
+          </a>
+        </div>
+
+        <!-- Servicio 4: Jornada especial 8h -->
+        <div class="pricing-card fade-in fade-delay" data-book-url="https://cal.com/shanongomez/8h">
+          <span class="pricing-label pricing-label--special">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17 5.8 21.3l2.4-7.4L2 9.4h7.6z"/></svg>
+            <span data-es="Jornada especial" data-en="Special session">Jornada especial</span>
+          </span>
+          <h2 class="pricing-title"
+            data-es="Jornada intensiva de acompañamiento"
+            data-en="Intensive support day">
+            Jornada intensiva de acompañamiento
+          </h2>
+          <p class="pricing-desc"
+            data-es="Una modalidad de mayor dedicación para familias que requieren un acompañamiento más amplio durante el día, sujeto a disponibilidad."
+            data-en="A higher-dedication format for families who require broader support during the day, subject to availability.">
+            Una modalidad de mayor dedicación para familias que requieren un acompañamiento más amplio durante el día, sujeto a disponibilidad.
+          </p>
+          <div class="pricing-meta">
+            <div class="pricing-duration">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              <span data-es="8 horas" data-en="8 hours">8 horas</span>
+            </div>
+            <div class="pricing-price-block">
+              <span class="pricing-price">900.000</span>
+              <span class="pricing-currency">COP</span>
+            </div>
+          </div>
+          <p class="pricing-note"
+            data-es="Servicio sujeto a evaluación previa y disponibilidad de agenda."
+            data-en="Service subject to prior evaluation and schedule availability.">
+            Servicio sujeto a evaluación previa y disponibilidad de agenda.
+          </p>
+          <a href="#" class="btn-primary wa-link">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            <span data-es="Consultar disponibilidad" data-en="Check availability">Consultar disponibilidad</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ DISCLAIMER ═══════════════════════════ -->
+  <section class="disclaimer">
+    <div class="container">
+      <div class="disclaimer-inner fade-in">
+        <h2 class="disclaimer-title"
+          data-es="Un acompañamiento profesional, humano y complementario"
+          data-en="Professional, human, and complementary support">
+          Un acompañamiento profesional, humano y complementario
+        </h2>
+        <p class="disclaimer-text"
+          data-es="Los servicios de Shanon están orientados a brindar acompañamiento, claridad, orientación y apoyo a las familias en etapas sensibles del cuidado. No reemplazan la valoración médica ni el seguimiento profesional correspondiente."
+          data-en="Shanon's services are designed to provide guidance, clarity, reassurance, and support to families during sensitive stages of care. They do not replace medical evaluation or the corresponding professional follow-up.">
+          Los servicios de Shanon están orientados a brindar acompañamiento, claridad, orientación y apoyo a las familias en etapas sensibles del cuidado. No reemplazan la valoración médica ni el seguimiento profesional correspondiente.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ LÍNEAS DE SERVICIO ═══════════════════════════ -->
+  <section class="service-lines">
+    <div class="container">
+      <div class="section-header fade-in">
+        <p class="eyebrow" data-es="A quién va dirigido" data-en="Who it's for">A quién va dirigido</p>
+        <h2 class="section-title"
+          data-es="Dos líneas de acompañamiento"
+          data-en="Two lines of support">
+          Dos líneas de acompañamiento
+        </h2>
+      </div>
+      <div class="lines-grid">
+
+        <div class="line-card line-card--main fade-in">
+          <div class="line-card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+          </div>
+          <p class="eyebrow" data-es="Línea principal" data-en="Main line">Línea principal</p>
+          <h3 class="line-card-title"
+            data-es="Acompañamiento para adultos mayores y sus familias"
+            data-en="Support for older adults and their families">
+            Acompañamiento para adultos mayores y sus familias
+          </h3>
+          <p class="line-card-text"
+            data-es="Orientación profesional para familias y cuidadores que necesitan mayor claridad, organización y tranquilidad en el acompañamiento de un adulto mayor, ya sea en casa, en procesos de recuperación o en etapas de mayor dependencia."
+            data-en="Professional guidance for families and caregivers who need more clarity, organization, and peace of mind when supporting an older adult at home, during recovery, or through stages of greater dependence.">
+            Orientación profesional para familias y cuidadores que necesitan mayor claridad, organización y tranquilidad en el acompañamiento de un adulto mayor, ya sea en casa, en procesos de recuperación o en etapas de mayor dependencia.
+          </p>
+        </div>
+
+        <div class="line-card fade-in fade-delay">
+          <div class="line-card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+          </div>
+          <p class="eyebrow" data-es="Línea complementaria" data-en="Complementary line">Línea complementaria</p>
+          <h3 class="line-card-title"
+            data-es="Acompañamiento inicial para padres de recién nacidos"
+            data-en="Initial support for parents of newborns">
+            Acompañamiento inicial para padres de recién nacidos
+          </h3>
+          <p class="line-card-text"
+            data-es="Apoyo profesional y humano para familias que desean vivir los primeros días del bebé con más tranquilidad, claridad y confianza, a través de una orientación cercana y complementaria al seguimiento pediátrico."
+            data-en="Professional and human support for families who want to experience their baby's first days with more peace of mind, clarity, and confidence through warm guidance that complements pediatric follow-up.">
+            Apoyo profesional y humano para familias que desean vivir los primeros días del bebé con más tranquilidad, claridad y confianza, a través de una orientación cercana y complementaria al seguimiento pediátrico.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ TRANSPARENCIA ═══════════════════════════ -->
+  <section class="transparency">
+    <div class="container">
+      <div class="fade-in">
+        <h2 class="section-title"
+          data-es="Transparencia y claridad desde el inicio"
+          data-en="Clarity and transparency from the beginning">
+          Transparencia y claridad desde el inicio
+        </h2>
+        <p class="transparency-body"
+          data-es="Para facilitar la decisión de cada familia, Shanon presenta valores base de referencia según la modalidad y el tiempo de acompañamiento. La orientación inicial por WhatsApp permite confirmar cuál opción se ajusta mejor a cada caso."
+          data-en="To make the decision easier for each family, Shanon provides base prices according to the format and duration of support. The initial WhatsApp conversation helps confirm which option best fits each case.">
+          Para facilitar la decisión de cada familia, Shanon presenta valores base de referencia según la modalidad y el tiempo de acompañamiento. La orientación inicial por WhatsApp permite confirmar cuál opción se ajusta mejor a cada caso.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ CTA FINAL ═══════════════════════════ -->
+  <section class="cta-final">
+    <div class="container">
+      <div class="cta-content fade-in">
+        <h2 class="cta-title"
+          data-es="Si quieres conocer qué modalidad se ajusta mejor a tu caso, escríbele a Shanon"
+          data-en="If you want to know which option best fits your case, message Shanon">
+          Si quieres conocer qué modalidad se ajusta mejor a tu caso, escríbele a Shanon
+        </h2>
+        <p class="cta-text"
+          data-es="El primer paso es una conversación breve por WhatsApp para entender tu necesidad y orientarte hacia la opción más adecuada."
+          data-en="The first step is a brief WhatsApp conversation to understand your needs and guide you toward the most appropriate option.">
+          El primer paso es una conversación breve por WhatsApp para entender tu necesidad y orientarte hacia la opción más adecuada.
+        </p>
+        <a href="#" class="btn-primary btn-lg wa-link">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          <span data-es="Hablar por WhatsApp" data-en="Chat on WhatsApp">Hablar por WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ FOOTER ═══════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">Shanon</div>
+          <p data-es="Acompañamiento profesional y humano para familias cuidadoras"
+             data-en="Professional and human support for caregiving families">
+            Acompañamiento profesional y humano para familias cuidadoras
+          </p>
+          <p class="footer-lang" data-es="Atención en español e inglés" data-en="Support in Spanish and English">Atención en español e inglés</p>
+        </div>
+        <div class="footer-links">
+          <a href="/"          data-es="Inicio"       data-en="Home">Inicio</a>
+          <a href="/#sobre"    data-es="Sobre Shanon" data-en="About Shanon">Sobre Shanon</a>
+          <a href="/services"  data-es="Servicios"    data-en="Services">Servicios</a>
+          <a href="#" class="footer-wa wa-link">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            WhatsApp
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Shanon Gómez. <span data-es="Todos los derechos reservados." data-en="All rights reserved.">Todos los derechos reservados.</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botón flotante WhatsApp -->
+  <a href="#" class="wa-float wa-link" aria-label="WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
