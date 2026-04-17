@@ -5,8 +5,8 @@
 const WA_NUMBER = '573242762563';
 
 const WA_MESSAGES = {
-  es: 'Hola Shanon, vi tu página web y me gustaría recibir información sobre tu acompañamiento profesional. Quisiera contarte si mi caso está relacionado con el cuidado de un adulto mayor o con los primeros días de un recién nacido.',
-  en: 'Hello Shanon, I saw your website and I would like to receive more information about your professional support services. I\'d like to tell you whether my case is related to caring for an older adult or to the first days of a newborn.'
+  es: 'Hola Shanon, vi tu página y quiero información sobre tu acompañamiento para adultos mayores o recién nacidos.',
+  en: 'Hello Shanon, I saw your website and would like information about your support for older adults or newborns.'
 };
 
 const SEO = {
